@@ -18,6 +18,13 @@ while (j <= 5) {
 }
 
 /*
+while문은 조건식을 생략할 수 없다.
+while(true){
+  console.log('test');
+}
+*/
+
+/*
 do{
     실행문;
 } while(조건식);
