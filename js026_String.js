@@ -123,6 +123,6 @@ console.log(text.repeat(10));
 text = "*";
 console.log(text.repeat(10));
 
-let text = "  korea  ";
-console.log(text.length); //9
-console.log(text2.trim().length);
+let text2 = "  korea   data ";
+console.log(text2.length); //15
+console.log(text2.trim().length); // 12
