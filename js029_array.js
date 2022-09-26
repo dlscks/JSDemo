@@ -87,8 +87,8 @@ console.log(arr2.flat(2)); //[ 1, 3, [ 4, 5 ] ]
 console.log(arr2.flat(3)); //[ 1, 3, 4, 5 ]
 
 let arr3 = [1, 3, [[[4, 5]]], [7, 8]];
-console.log(arr3.flat()); //[ 1, 3, [ [ 4, 5 ] ] ]
-console.log(arr3); //[ 1, 3, [ [ [Array] ] ] ]
-console.log(arr3.flat(1)); //[ 1, 3, [ [ 4, 5 ] ] ]
-console.log(arr3.flat(2)); //[ 1, 3, [ 4, 5 ] ]
-console.log(arr3.flat(3)); //[ 1, 3, 4, 5 ]
+console.log(arr3.flat()); //[ 1, 3, [ [ 4, 5 ] ], 7, 8 ]
+console.log(arr3); //[ 1, 3, [ [ [Array] ] ], [ 7, 8 ] ]
+console.log(arr3.flat(1)); //[ 1, 3, [ [ 4, 5 ] ], 7, 8 ]
+console.log(arr3.flat(2)); //[ 1, 3, [ 4, 5 ], 7, 8 ]
+console.log(arr3.flat(3)); //[ 1, 3, 4, 5, 7, 8 ]
