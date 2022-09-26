@@ -76,9 +76,19 @@ aNode = pNode.firstElementChild;
 //<img src="images/gosu.jpg" alt="영화배우 고수" />
 console.log(aNode);
 
-let aATTrNode = aNode.getAttribute("src");
+/////////////////////////////////////////////
+//객체.getAttibute("속성명"), 객체.setAttribute("속성명","값")
+//객체 .속성명,객체,속성명="값"
+let aAttrNode = aNode.getAttribute("src");
 //images/gosu.jpg
-console.log(aATTrNode);
+console.log(aAttrNode);
 
 aAttrNode = aNode.src;
+//http://127.0.0.1:5500/images/gosu.jpg
 console.log(aAttrNode);
+
+aNode.setAttribute("title", "스타배우");
+console.log(aNode.getAttribute("title"));
+
+aNode.id = "imgGosu";
+console.log(aNode.id);
