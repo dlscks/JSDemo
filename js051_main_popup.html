@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js051_main_popup.html</title>
+    <style>
+      #popup {
+        width: 301px;
+        height: 351px;
+        border: 1px solid black;
+        position: fixed;
+        left: 30%;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      돈스파이크는 올해 4월부터 강남 일대에서 지인들과 호텔을 빌려 여러 차례
+      마약을 투약한 혐의(마약류관리법 위반)를 받는다.돈스파이크는 올해 4월부터
+      강남 일대에서 지인들과 호텔을 빌려 여러 차례 마약을 투약한
+      혐의(마약류관리법 위반)를 받는다.돈스파이크는 올해 4월부터 강남 일대에서
+      지인들과 호텔을 빌려 여러 차례 마약을 투약한 혐의(마약류관리법 위반)를
+      받는다.돈스파이크는 올해 4월부터 강남 일대에서 지인들과 호텔을 빌려 여러
+      차례 마약을 투약한 혐의(마약류관리법 위반)를 받는다.
+    </p>
+    <div id="popup">
+      <img src="images/popup.jpg" usemap="#pop" />
+    </div>
+    <map name="pop" id="pop">
+      <area shape="rect" coords="255,332,290,345" href="#" alt="창닫기" />
+    </map>
+    <script>
+      let close = document.querySelector("map#pop area");
+      close.onclick = () => {
+        let popup = document.querySelector("div#popup");
+        popup.style.width = "0px";
+        popup.style.height = "0px";
+        popup.style.visibility = "hidden";
+      };
+    </script>
+  </body>
+</html>
