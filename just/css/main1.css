@@ -19,12 +19,11 @@ ol {
   margin: 0;
   list-style-type: none;
 }
-
 li {
   float: left;
 }
 
-/*   공통 CSS */
+/* 공통 css*/
 
 /*가운데 정렬*/
 .ibx {
@@ -36,31 +35,29 @@ li {
   float: left;
   height: 100%;
   padding: 10px;
-  /*박스가 패딩 때문에 커지는 것을 막아줌*/
+  /*박스가 패딩때문에 커지는 것을 막아줌*/
   box-sizing: border-box;
 }
 
-/*==================A header================*/
+/*=====================A header==================*/
 .top {
   position: relative;
   height: 100px;
-  z-index: 999; /* 가장 위로 배치*/
+  z-index: 999; /*가장 위로 배치*/
 }
 
 .top1 {
   width: 200px;
 }
-
 .top2 {
   width: 1000px;
 }
 
-/* 로고 */
 .logo {
   margin-left: -10px;
 }
 
-/* 메누 */
+/*메뉴*/
 .gnb {
   width: 800px;
   height: 50px;
@@ -69,24 +66,25 @@ li {
   margin-left: 190px;
 }
 
-/* .gnb가상요소로 메뉴 100%(1200px)배경 만들기 */
+/* .gnb가상요소로 메뉴  100%(1200px)배경 만들기*/
 .gnb::before {
   content: "";
   display: block;
   position: absolute;
   top: 100px;
   left: 0;
-  /* 나의부모는? .gnb가 부모여선 안됨! */
+  /* 나의부모는? .gnb가 부모여선 안됨!*/
   width: 100%;
-  height: 0; /* 170px - .gnb에 마우스 오버시 크기 */
+  height: 0; /*170px - .gnb에 마우스 오버시 크기*/
   background-color: rgba(218, 238, 255, 0.9);
-  transition: height 0.4s; /* 서브메뉴 ol과 동일한 트랜지션 */
+  transition: height 0.4s; /*서브메뉴 ol과 동일한 트랜지션*/
 }
 
-/* header {
-  border: 1px solid red;
-} */
+/* header { 
+  border: 1px solid red; 
+ } */
 
+/*서브메뉴 아래로 내려오게*/
 .gnb li {
   position: relative;
   width: 200px;
@@ -104,7 +102,7 @@ li {
   text-align: center;
 }
 
-/* 서브 메뉴 */
+/*서브 메뉴*/
 .gnb ol {
   height: 0;
   overflow: hidden;
@@ -120,18 +118,18 @@ li {
   line-height: 40px;
 }
 
-/* 하이라이트 설정*/
-/* 메인, 서브 메뉴 */
+/*하이라이트 설정*/
+/*메인, 서브 메뉴*/
 .gnb li:hover a {
   color: #fff;
 }
 
-/* 서브 메뉴 */
+/*서브 메뉴*/
 .gnb ol li:hover a {
   background-color: rgb(0, 54, 233);
 }
 
-/*=========== 슬라이딩 ===================*/
+/*=====슬라이딩=====*/
 .ban {
   height: 300px;
   overflow: hidden;
@@ -142,15 +140,13 @@ li {
   top: 0;
 }
 
-/* /////////////////////////////////////////*/
-/*  공지사항 및 갤러리  */
-
+/*=====공지사항 및 갤러리=====*/
 .cont > .pbx {
   width: 400px;
-  /* background-color: yellow; */
+  /* background-color: yellow;  =영역확인*/
 }
 
-/* 탭메뉴 */
+/*탭메뉴*/
 .tm {
   width: 200px;
   height: 40px;
@@ -169,23 +165,22 @@ li {
   background-color: #fff;
 }
 
-/* 탭 내용 */
+/*탭 내용*/
 .tc {
   height: 138px;
   background-color: #fff;
 }
 
 .tc > li {
-  width: 100%;
+  width: 100px;
   height: 100%;
   display: none;
 }
-
 .tc > li.on {
   display: block;
 }
 
-/* 공지사항 리스트*/
+/*공지사항 리스트*/
 .gong {
   padding-top: 9px;
   padding-left: 7px;
@@ -217,49 +212,4 @@ li {
 .gal img {
   width: 100px;
   border: 1px solid #777;
-}
-
-/* 배너 및 바로가기 이미지 */
-.im {
-  width: 100%;
-  height: 100%;
-}
-
-/* ============================== */
-/* Footer */
-
-.info1 {
-  width: 200px;
-}
-
-.info2 {
-  width: 800px;
-  text-align: center;
-  line-height: 80px;
-  font-weight: bold;
-}
-
-.info3 {
-  width: 200px;
-  text-align: center;
-  line-height: 107px;
-}
-
-/* ============================== */
-/* 팝업창 */
-
-.pop {
-  position: fixed;
-  top: 30%;
-  left: 50%;
-
-  width: 350px;
-  padding: 15px;
-  z-index: 999;
-  background-color: rgb(186, 217, 64);
-  border: 3px solid #888;
-}
-
-.bbx {
-  text-align: right;
 }
